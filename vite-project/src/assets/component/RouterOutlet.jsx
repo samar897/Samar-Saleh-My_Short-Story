@@ -6,8 +6,10 @@ import Home from "../component/Home";
 
 import { Box,SimpleGrid } from '@chakra-ui/react';
 
+import React from 'react';
 
-import {Route, Routes } from 'react-router-dom';
+
+import {Route, Routes,Outlet } from 'react-router-dom';
 import Card from "../component/Card";
 //import HomeExpanded from "./HomeExpanded";
 import Images11 from '../component/IBM.jpg'
@@ -15,8 +17,12 @@ import SDAIA from '../component/SDAIA.jpg'
 import Photo from '../component/photo1.jpg'
 
 export default function RouterOutlet() {
+
+
   return (
 <Box>
+
+
 
 <Routes>
 <Route path="/" element={<Home/>}></Route>
@@ -28,8 +34,9 @@ export default function RouterOutlet() {
       
       <div>
    
-
       <Home/>
+     
+      <Outlet/>
       
       </div>}
       
@@ -38,7 +45,7 @@ export default function RouterOutlet() {
       </Route>
       <Route path="/home/expanded" element={
         
-        <div>
+        <Box>
         <Nav></Nav>
 
         <SimpleGrid columns={3} spacingX='40px' spacingY='20px'>
@@ -56,7 +63,7 @@ export default function RouterOutlet() {
         </SimpleGrid>
  
         <Footer></Footer>
-      </div>
+      </Box>
     }
     
       >
@@ -66,12 +73,8 @@ export default function RouterOutlet() {
 
 </Route>
 
-
-
 </Routes>
 
-
-      
 </Box>
   )
 }
