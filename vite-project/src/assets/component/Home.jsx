@@ -13,14 +13,14 @@ import {
   Box,SimpleGrid,
 } from '@chakra-ui/react'
 //import React from "react";
-import Footer from "./assets/component/Footer";
-import Nav from "./assets/component/Nav";
+import Footer from "./Footer";
+import Nav from "./Nav";
 
 //import Display1 from "./assets/component/Display1";
-import Card from "./assets/component/Card";
-import Images11 from '../public/IBM.jpg'
-import SDAIA from '../public/SDAIA.jpg'
-import Photo from '../public/photo1.jpg'
+import Card from "./Card";
+import Images11 from '../component/IBM.jpg'
+import SDAIA from '../component/SDAIA.jpg'
+import Photo from '../component/photo1.jpg'
 
 
 //<Route path="/*" element={<p> the page not found </p>}></Route>
